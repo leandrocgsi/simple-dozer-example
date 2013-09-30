@@ -22,14 +22,14 @@ public class DozerParserTest {
 	
 	@Test
 	public void parseOgreInputToOgreOutputTest(){
-		OutputObject output = DozerParser.parseOgreInputToOgreOutput(mockInput(), OutputObject.class);
+		OutputObject output = DozerParser.parseObjectInputToObjectOutput(mockInput(), OutputObject.class);
 		Assert.assertEquals("Name Test", output.getName());
 		Assert.assertTrue(output.getAge() == 21);
 	}
 	
 	@Test
 	public void parserListOgreInputToOgreOutputTest(){
-		List<OutputObject> output = DozerParser.parserListOgreInputToOgreOutput(mockInputList(), OutputObject.class); 
+		List<OutputObject> output = DozerParser.parserListObjectInputToObjectOutput(mockInputList(), OutputObject.class); 
 		Assert.assertEquals("Name Test 2", output.get(0).getName());
 		Assert.assertTrue(output.get(0).getAge() == 22);
 	}

@@ -10,11 +10,11 @@ public class DozerParser {
 	
 	private static final Mapper dozerMapper = new DozerBeanMapper();
 
-	public static <O,D> D parseOgreInputToOgreOutput(O originalObject, Class<D> destinationObject) {
+	public static <O,D> D parseObjectInputToObjectOutput(O originalObject, Class<D> destinationObject) {
 		return parser(destinationObject, originalObject);
 	}
 
-	public static <O,D> List<D> parserListOgreInputToOgreOutput(List<O> originalObjects, Class<D> destinationObject) {
+	public static <O,D> List<D> parserListObjectInputToObjectOutput(List<O> originalObjects, Class<D> destinationObject) {
 		List<D> destinationObjects = new ArrayList<D>();
 		for (Object originalObject : originalObjects) destinationObjects.add(parser(destinationObject, originalObject));
 		return destinationObjects;

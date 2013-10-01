@@ -7,7 +7,7 @@ import java.util.List;
 public class MockInputObject {
 
     private InputObject inputObject = new InputObject();
-    
+
     public InputObject mockInput() {
         inputObject.setName("Name Test");
         inputObject.setAge(21);

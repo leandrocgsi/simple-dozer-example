@@ -1,4 +1,4 @@
-package br.com.semeru.dozer.mocks;
+package br.com.semeru.dozer.objects;
 
 import java.io.Serializable;
 

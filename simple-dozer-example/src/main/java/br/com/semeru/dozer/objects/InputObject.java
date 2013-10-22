@@ -8,6 +8,8 @@ public class InputObject implements Serializable {
 
     private String name;
     private Integer age;
+    
+    private InputAddress address;
 
     public String getName() {
         return name;
@@ -24,4 +26,12 @@ public class InputObject implements Serializable {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public InputAddress getAddress() {
+        return address;
+    }
+
+    public void setAdress(InputAddress address) {
+        this.address = address;
+    }    
 }

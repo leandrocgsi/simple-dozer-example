@@ -1,5 +1,6 @@
 package br.com.semeru.dozer.mocks;
 
+import br.com.semeru.dozer.objects.InputAddress;
 import br.com.semeru.dozer.objects.InputObject;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,7 @@ public class MockInputObject {
     public InputObject mockInput() {
         inputObject.setName("Name Test");
         inputObject.setAge(21);
+        inputObject.setAdress(mockAddress());
         return inputObject;
     }
 
@@ -25,6 +27,15 @@ public class MockInputObject {
     private InputObject mockInput(Integer number) {
         inputObject.setName("Name Test " + number);
         inputObject.setAge(20 + number);
+        inputObject.setAdress(mockAddress());
         return inputObject;
+    }
+
+    private InputAddress mockAddress() {
+        InputAddress address = new InputAddress();
+        address.setTown("Old City");
+        address.setRoad("Road 01");
+        address.setNumber(123);
+        return address;
     }
 }

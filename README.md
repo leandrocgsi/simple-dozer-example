@@ -7,4 +7,4 @@ This is a simple project with Dozer object mapper.
 
 You can see more about this in:
 
-* [https://github.com/DozerMapper/dozer](Dozer Mapper)
+* [Dozer Mapper](https://github.com/DozerMapper/dozer)
